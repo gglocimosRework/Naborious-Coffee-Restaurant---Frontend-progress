@@ -27,12 +27,12 @@ Introduction of client-side logic
 Folder: JS-version
 
 ## Technologies used(in Visual Code):
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ### Future Improvements
-Make the layout fully responsive
-Improve UI/UX design
-Add more advanced JavaScript features
-Possibly integrate a backend in the future
+ - Make the layout fully responsive
+ - Improve UI/UX design
+ - Add more advanced JavaScript features
+ - Possibly integrate a backend in the future
