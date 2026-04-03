@@ -1,0 +1,105 @@
+@media (max-width: 900px) {
+    .coffe-grid, .sweet-grid, .others-sweets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+  
+  body {
+    overflow-x: hidden;
+ }
+
+  header {
+    padding: 11px 15px;
+ }
+
+  nav ul {
+    display: none; 
+ }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+ }
+
+  
+  .mobile-menu {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 85%;
+    max-width: 275px;
+    height: calc(100vh - 80px);
+    background: var(--orange-tone-1-color);
+    padding: 25px 20px;
+    border-radius: 14px;
+    gap: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+ }
+
+  .mobile-menu.active {
+    right: 9.5px;
+ }
+
+   .mobile-menu a {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 0;
+    display: block;
+ }
+  
+  .hero {
+    height: 35vh;
+    background-attachment: scroll;
+ }
+
+  .hero-name {
+    font-size: 22px;
+    padding: 0 10px;
+    text-align: center;
+ } 
+}
+
+@media (min-width: 600px) {
+  
+    .mobile-menu {
+        width: 250px; 
+        top: 100px; 
+        padding: 25px;
+        gap: 25px;
+    }
+
+   
+    .menu-toggle {
+        font-size: 28px;
+    }
+
+   
+    .mobile-menu a {
+        font-size: 20px;
+        padding: 8px 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 20px;
+  }
+
+  .coffe-grid, .sweet-grid, .others-sweets-grid {
+      grid-template-columns: 1fr;
+      margin-top: 60px;
+    }
+
+    .coffee-item, .sweet-item, .other-sweet-item {
+        padding: 15px;
+    }
+}

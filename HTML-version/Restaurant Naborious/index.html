@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naborious Coffee</title>
+
+    <link rel="icon" href="./images/logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="./css/general.css"> 
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/featured.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+</head>
+<body>
+    <header>
+        <div class="brand"> 
+          <img id="logo" src="./images/logo.jpeg" alt="Naborious Coffee Logo" class="logo">
+          <h1>Naborious Coffee</h1>
+
+        </div>
+
+        <nav>
+                 
+                 <button id="theme-switch">
+                 <img src="./images/dark_mode.png" alt="Dark Mode">
+                 <img src="./images/light_mode.png" alt="Light Mode">
+                 </button>
+
+            <div id="menu-wrapper"> 
+                <div class="menu-toggle" 
+                onclick="toggleMenu()">☰
+                </div>
+                
+
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="#" class="return-text-menu">Return</a>
+
+                    <a href="#featured-coffees" class="scroll-link" 
+                    data-target="featured-coffees">Coffees</a>
+
+                    <a href="#canadian-sweets" class="scroll-link" 
+                    data-target="canadian-sweets">Canadian Sweets</a>
+
+                    <a href="#other-sweets" class="scroll-link" 
+                    data-target="other-sweets">Other Sweets</a>
+
+                    <a href="#about" class="scroll-link" data-target="about">About Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+     
+    <main>
+        <section class="hero">
+            <p class="hero-name"> Delicious flavors await you!</p>
+        </section>
+
+        <div class="overlay" id="overlay"></div>
+          <container class="product-modal" id="productModal">
+            
+                <button class="close-modal" id="closeModal">✕</button>
+                <img id="modalImage" src="" alt="">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <span id="modalPrice"></span>
+                <button class="buy-btn">Buy</button>
+        
+          </container>
+        
+
+
+      <section class="featured"  id="featured-coffees">
+            <h3>Featured Coffees</h3>
+
+        <div class="coffe-grid"> 
+            <div class="coffee-item product-card" 
+            data-title="Espresso" 
+            data-description="Strong and aromatic Italian coffee."
+            data-price="$3.50"
+            data-image="./images/espresso.jpg">
+
+                <img src="./images/espresso.jpg" alt="Espresso" loading="lazy">
+                <h4>Espresso</h4>
+
+                <p>A strong and bold coffee made by forcing hot 
+                    water through finely-ground coffee beans.</p>
+        </div>
+
+            <div class="coffee-item product-card"
+                data-title="Latte" 
+                data-description="Unique and decent creamy coffe."
+                data-price="$3.50"
+                data-image="./images/latte.jpg">
+            
+                <img src="./images/latte.jpg" alt="Latte" loading="lazy">
+                <h4>Latte</h4>
+
+                <p>A creamy coffee made with <b>espresso</b> and steamed milk, 
+                    topped with a small amount of foam.
+                </p>
+            </div>
+            <div class="coffee-item product-card"
+                data-title="Cappucino" 
+                data-description="Special in the hearts of countless people"
+                data-price="$6.00"
+                data-image="./images/cappucino.jpg">
+
+                <img src="./images/cappucino.jpg" alt="Cappucino" loading="lazy">
+                <h4>Cappucino</h4>
+
+                <p>A coffee drink made with <b>espresso</b> and steamed milk, 
+                    topped with a layer of foam.</p>
+            </div>
+            
+            <div class="coffee-item product-card"
+                data-title="Milkshake" 
+                data-description="Delicious creamy milk"
+                data-price="$5.50"
+                data-image="./images/milkshake.jpg">
+
+                <img src="./images/milkshake.jpg" alt="Milkshake" loading="lazy">
+                <h4>Milkshake</h4>
+
+                <p>A creamy milk-based drink made with ice cream and flavoring, 
+                    often served in a tall glass.</p>
+            </div>
+
+            <div class="coffee-item product-card"
+                data-title="Macchiato" 
+                data-description="Exotic but delicious coffee with a shot of espresso"
+                data-price="$5.50"
+                data-image="./images/macchiato.jpg">
+
+                <img src="./images/macchiato.jpg" alt="Macchiato" loading="lazy">
+                <h4>Macchiato</h4>
+
+                <p>A coffee drink made with a shot of <b>espresso</b> and a small amount of steamed milk, 
+                    often served in a small cup.</p>
+            </div>
+
+             <div class="coffee-item product-card"
+                data-title="ChaiLatte" 
+                data-description="Fabulous coffee made with a tea and milk"
+                data-price="$6.50"
+                data-image="./images/chai-latte.jpg">
+
+                <img src="./images/chai-latte.jpg" alt="Chai Latte" loading="lazy">
+                <h4>Chai Latte</h4>
+
+                <p>A creamy coffee drink made with chai tea and steamed milk, 
+                    often served in a tall glass.</p>
+            </div>
+
+        </div>
+           
+       </section>
+
+      <section class="featured-canada-sweets-container" id="canadian-sweets">
+        <div class="featured-canada-sweets">
+         <h3>Featured Canadian Sweets 🍁</h3>
+
+          <div class="sweet-grid">
+            <div class="sweet-item product-card" 
+                data-title="ButterTart" 
+                data-description="healthy and classic canadian dessert made"
+                data-price="$7.00"
+                data-image="./images/butter-tarts.png">
+            
+                <img src="./images/butter-tarts.png" alt="Butter Tarts" loading="lazy">
+                <h4>Butter Tart</h4>
+
+                <p>A classic Canadian dessert made with a flaky pastry shell filled with 
+                    a sweet and gooey mixture of butter, sugar, and eggs.</p>
+            </div>
+
+            <div class="sweet-item product-card"
+                data-title="NanaimoBar" 
+                data-description="Wonderful sweet split in bars"
+                data-price="$2.50"
+                data-image="./images/nanaimo-bars.webp">
+            
+                    <img src="./images/nanaimo-bars.webp" alt="Nanaimo Bars" loading="lazy">
+                    <h4>Nanaimo Bar</h4>
+
+                    <p>A no-bake dessert bar that originated in Nanaimo, British Columbia, 
+                        consisting of a crumbly base layer, a custard-flavored middle layer, 
+                        and a chocolate topping.</p>
+            </div> 
+
+            <div class="sweet-item product-card"
+                data-title="MapleSyrup" 
+                data-description="Most known complement to use with breakfast foods"
+                data-price="$5.00"
+                data-image="./images/maple-syrup.jpg">
+            
+                <img src="./images/maple-syrup.jpg" alt="Maple Syrup" loading="lazy">
+                <h4>Maple Syrup</h4>
+    
+                <p>A sweet syrup made from the sap of maple trees, 
+                    often used as a topping for pancakes, waffles, and other breakfast foods.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        <section class="featured-others-sweets" id="other-sweets">
+          <h3>Other featured Sweets</h3>
+            <div class="others-sweets-grid">
+                <div class="other-sweet-item product-card"
+                    data-title="Muffins" 
+                    data-description="a simple small cake but still delicious by choice"
+                    data-price="$1.50"
+                    data-image="./images/muffins.jpg">
+                
+                    <img src="./images/muffins.jpg" alt="Muffins" loading="lazy">
+                    <h4>Muffins</h4>
+
+                    <p>A quick bread baked in small cups 
+                        made with ingredients like flour, sugar, eggs, 
+                        and butter.</p>
+                </div>
+
+                <div class="other-sweet-item product-card"
+                    data-title="BrowniesPie" 
+                    data-description="a traditional pie from United States"
+                    data-price="$4.50"
+                    data-image="./images/brownies-pie.jpg">
+                
+                    <img src="./images/brownies-pie.jpg" alt="Brownies Pie" loading="lazy">
+                    <h4>Brownies Pie</h4>
+
+                    <p>A traditional United States dessert made with a rich, fudgy brownie base, 
+                        often topped with a sweet sauce or whipped cream.</p>
+                </div>
+
+                <div class="other-sweet-item product-card"
+                    data-title="Waffles" 
+                    data-description="the smoothest food in our restaurant"
+                    data-price="$6.50"
+                    data-image="./images/waffles.jpg">
+                
+                    <img src="./images/waffles.jpg" alt="Waffles" loading="lazy">
+                    <h4>Waffles</h4>
+
+                    <p>A delicious and smooth mass made from a batter of flour, sugar, eggs, and butter, 
+                        cooked in a waffle iron to create a crispy, golden-brown treat.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <section class="about-section" id="about">
+        <h3 class="about-us">About Us</h3>
+        <p> 
+            Naborious Coffee is dedicated place on Canada to providing the highest quality 
+            coffee experience and cultural canadian sweets. 
+            We source our beans from sustainable farms around the world and roast
+        </p>
+
+        <h3 class="about-us">Contact Us</h3>
+        <p>
+            Email: info@naboriouscoffee.com
+        </p>
+        <p>
+            Phone: +1 (555) 123-4567
+        </p>
+        <p>
+            Address: 183 Coffee Street, Quebec, Montreal, Canada
+        </p>
+    </section>
+
+
+  <footer class="footer">
+        <p>&copy; 2024 Naborious Coffee. All rights reserved.</p>
+  </footer>
+
+
+        <script src="./js/Naborious-coffee.js"></script>
+ </body>                
+</html>

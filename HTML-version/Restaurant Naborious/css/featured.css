@@ -1,0 +1,56 @@
+.featured, .featured-canada-sweets, .featured-others-sweets {
+    padding: 60px 8%;
+    text-align: center; 
+}
+
+.featured-canada-sweets-container {
+    background-color: var(--slightly-black-color);
+    border-radius: 12px; 
+    padding-bottom: 30px;
+}
+
+.featured h3, .featured-canada-sweets h3, .featured-others-sweets h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.featured-canada-sweets h4 {
+    color: var(--black-color);
+}
+
+.coffe-grid, .sweet-grid, .others-sweets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 115px;
+    justify-items: center;
+}
+
+.coffee-item, .sweet-item, .other-sweet-item {
+    background: var(--light-beige-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px var(--slightly-black-color);
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.coffee-item:hover, .sweet-item:hover, .other-sweet-item:hover {
+    transform: translateY(-5px);
+}
+
+.coffee-item img, .sweet-item img, .other-sweet-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.coffee-item h4 {
+    margin-bottom: 10px;
+}
