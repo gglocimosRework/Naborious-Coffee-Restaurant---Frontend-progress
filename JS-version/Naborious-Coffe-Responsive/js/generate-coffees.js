@@ -1,5 +1,5 @@
 import {coffees} from './products.js';
-import {openProductModal} from './Modal.js';
+import {openProductModal} from './modal.js';
 
 
 const main = document.getElementById("mainContent");

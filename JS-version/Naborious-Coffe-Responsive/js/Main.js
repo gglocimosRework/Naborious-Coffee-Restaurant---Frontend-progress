@@ -1,5 +1,6 @@
 import './generate-coffees.js';
 
+
 toggleMenu();
 
 const links = document.querySelectorAll('.scroll-link');
