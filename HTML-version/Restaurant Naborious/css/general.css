@@ -102,28 +102,29 @@ p {
 
 .about-section {
     background-color: var(--tertiary-color);
-    padding: 80px 8%;
+    padding: 80px;
     text-align: center;
 }
+
 .about-section h3 {
     font-size: 28px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    color: var(--white-color);
     font-weight: 600;
 }
 
 .about-section p {
     font-size: 20px;
     line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto 20px auto;   
+    max-width: 700px;
+    font-weight: 500;
+    margin: 0 auto 10px auto;   
     color: var(--white-color);
 }
 
 .about-us {
     font-size: 36px;
-    padding: 40px 5%;
-    text-align: center;
+    padding: 30px;
     font-weight: 700;
     color: var(--white-color);
 }
@@ -131,7 +132,7 @@ p {
 footer {
     background-color: var(--footer-bg-color);
     color: var(--white-color);
-    padding: 30px 5%;
+    padding: 20px 5%;
     text-align: center;
     font-size: 16px;
 }
