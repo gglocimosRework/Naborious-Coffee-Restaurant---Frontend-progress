@@ -31,6 +31,12 @@ Introduction of client-side logic
 
 Folder: JS-version
 
+## 📸 Preview In Order
+
+| HTML Version | JavaScript Version |
+|-------------|-------------------|
+| ![](./images/HTML-version.png) | ![](./images/JS-version.png) |
+
 ## Technologies used(in Visual Code):
 - HTML
 - CSS
