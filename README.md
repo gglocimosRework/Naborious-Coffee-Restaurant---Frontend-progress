@@ -35,7 +35,7 @@ Folder: JS-version
 
 | HTML Version | JavaScript Version |
 |-------------|-------------------|
-| ![](./General-Images/HTML-version.png) | ![](./General-Images/JS-version.png) |
+| ![](./General-Images/HTML-version) | ![](./General-Images/JS-version) |
 
 ## Technologies used(in Visual Code):
 - HTML
