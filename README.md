@@ -31,7 +31,7 @@ Introduction of client-side logic
 
 Folder: JS-version
 
-## 📸 Preview In Order
+## 📸 Preview In Order(Comparison between them)
 
 | HTML Version | JavaScript Version |
 |-------------|-------------------|
